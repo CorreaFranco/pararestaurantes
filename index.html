@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyecto - Restaurante</title>
+    <link rel="stylesheet" href="./styles/index.css">
+</head>
+<body>
+    <header>
+        <div class="header__container">
+            <p>Más que un gusto</p>
+        </div>
+    </header>
+    
+    <main id="main">
+        <div class="main__container">
+            <section class="productos__main">
+                <div class="productos__container">
+                    <div class="productos__title">
+                        <h2>PRODUCTOS</h2>
+                    </div>
+                    <div id="productos__tipos" class="productos__tipos">
+                        <div class="productos__tipo">
+                            <h3 class="productos__title--tipos">HAMBURGUESAS</h3>
+                            <div id="principal__lista">
+                            </div>
+                        </div class="productos__tipo">
+                        <div class="productos__tipo">
+                            <h3>ENSALADAS</h3>
+                            <div id="ensalada__lista"></div>
+                        </div>
+                        <div class="productos__tipo">
+                            <h3>BEBIDAS</h3>
+                            <div id="bebida__lista"></div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="contenido-a-imprimir" class="productos__pedido">
+                <div class="pedido__container">
+                    <div class="pedido__title">
+                        <h2>PEDIDO</h2>
+                    </div>
+
+                    <div class="pedido__lista">
+                        <div id="lista__container--pedidos" class="lista__container--pedidos"></div>
+                    </div>
+
+                    <div class="pedido__costo">
+                        <p class="pedido__total--title">TOTAL:</p>
+                        <div id="pedido__total" class="pedido__total"></div>
+                    </div>
+
+                    <div class="botones">
+                        <div class="boton__eliminar--pedido">
+                            <button onclick="EliminarPedido()">Eliminar pedido</button>
+                        </div>
+                        <div class="boton__imprimir--pedido">
+                            <button onclick="Imprimir()">imprimir</button>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+
+            </section>
+    </main>
+    
+
+    <script src="./scripts/productos.js"></script>
+    <script src="./scripts/index.js"></script>
+
+</body>
+
+</html>
+
